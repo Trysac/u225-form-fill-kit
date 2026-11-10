@@ -9,4 +9,5 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- Added form-fill-kit: typed validation, human-confirmation digest, single-use submission, and LLM proposal extraction.
 - Initial project structure from the factory utility template.
