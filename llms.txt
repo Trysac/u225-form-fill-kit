@@ -1,16 +1,15 @@
 # form-fill-kit
 
-> Fill forms from agent-proposed values with typed validation, a human confirmation summary bound to a SHA-256 digest of the exact values and single-use submission Python package `trysac-form-fill-kit`, import name `form_fill_kit`, MIT licensed,
-> Python >= 3.10, no runtime dependencies.
+> Fill forms from agent-proposed values with typed validation, a human confirmation summary bound to a SHA-256 digest of the exact values, and single-use submission. Python package `trysac-form-fill-kit`, import name `form_fill_kit`, MIT licensed, Python >= 3.10, no runtime dependencies.
 
 ## Docs
 
-- [README](README.md): problem, install, usage example
-- [AGENTS](AGENTS.md): commands, folder map, conventions, limits
-- [Architecture](docs/ARCHITECTURE.md): shape of the package and its public API
-- [Testing](docs/TESTING.md): how to run and extend the tests
+- [README](README.md): problem, installation, usage example, public API and limits
+- [Project record](docs/PROJECT.md): objective, scope, out of scope
+- [Architecture](docs/ARCHITECTURE.md): package shape and public API
+- [Security](docs/SECURITY.md): defended and not-defended risks with limits
+- [Testing](docs/TESTING.md): tests that exist and how to run them
 
 ## Optional
 
 - [Stack](docs/STACK.md): tools used and discarded
-- [Changelog](CHANGELOG.md): release history

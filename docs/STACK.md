@@ -4,20 +4,10 @@
 
 | Tool | Why |
 |---|---|
-| Python >= 3.10 | Widest supported range that still allows modern typing syntax. |
-| uv | Fast, reproducible environments and builds on Windows and Linux. |
-| hatchling | Simple, standards-based build backend; no setup.py. |
-| ruff | Lint and format in one fast tool. |
-| mypy (strict) | Catches type errors before release; the package ships `py.typed`. |
-| pytest + pytest-cov | De facto standard test runner with branch coverage. |
-| gitleaks | Secret scanning locally and in CI. |
-| GitHub Actions + Dependabot | Thin CI wrapper over the local gates; weekly dependency updates. |
+| Python >= 3.10 | The code uses modern typing syntax, dataclasses, `MappingProxyType`, and standard-library modules only. |
+| Python standard library | `hashlib`, `json`, `logging`, `re`, `unicodedata`, `collections.abc`, `dataclasses`, `datetime`, `types`, and `typing` implement validation, digesting, summaries and the LLM port. |
+| pytest | The supplied test module `tests/test_form_fill_kit.py` is collected by pytest. |
 
 ## Discarded
 
-| Tool | Why not |
-|---|---|
-| Poetry | Slower, and uv covers the same needs with standard dependency groups. |
-| black + isort + flake8 | Replaced by ruff: one tool instead of three. |
-| tox / nox | The OS matrix lives in CI; locally a single `scripts/check.py` is enough. |
-| Shell scripts for gates | Not portable to Windows; the gates are a stdlib Python script. |
+No third-party runtime dependencies or alternative build, lint or formatting tools are declared in the supplied code. Email validation uses the implemented simple pattern rather than a full RFC 5322 parser.
